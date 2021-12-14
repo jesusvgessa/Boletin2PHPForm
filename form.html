@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        td {
+            padding: 0.2em 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Suscripcion electronica a nuestro boletin</h1>
+    <p>
+        Nota: Este es un formulario de ejemplo en el que los datos aqui escritos se
+        trasladan a otra pagina.
+    </p>
+    <form method="POST" action="comprobar.php">
+        <p>
+            Nombre: <input type="text" name="nombre"/>
+            Apellidos: <input type="text" name="apellidos" size="40"/>
+            e-mail: <input type="text" name="email" size="35"/>
+        </p>
+        <p>
+            contrasena: <input type="password" name="contras"/><br/>
+            <table>
+                <tr>
+                    <td>
+                        sexo<br/>
+                        <input type="radio" name="sexo" value="V"/> Varon<br/>
+                        <input type="radio" name="sexo" value="M"/> Mujer</p>
+                    </td>
+                    <td>
+                        Nivel de estudios<br/>
+                        <input type="radio" name="estudios" value="elemental" checked="checked">Certificado escolar<br/>
+                        <input type="radio" name="estudios" value="basico"/>Graduado en E.S.O.<br/>
+                        <input type="radio" name="estudios" value="bachiller"/>Bachiller - Formacion Profesional <br/>
+                        <input type="radio" name="estudios" value="diplomado"/>Diplomado<br/>
+                        <input type="radio" name="estudios" value="licenciado"/>Licenciado o Doctorado<br/>
+                    </td>
+                    <td>
+                        Interesado en los siguientes temas: <br/>
+                        <input type="checkbox" name="musica"/>Musica<br/>
+                        <input type="checkbox" name="deportes"/>Deportes<br/>
+                        <input type="checkbox" name="cine"/>Cine<br/>
+                        <input type="checkbox" name="libros"/>Libros<br/>
+                        <input type="checkbox" name="ciencia"/>Ciencia</p>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                Dia de la semana que le interesa recibirlo:
+            </p>
+            <select name="dia">
+                <option>dia de la semana:</option>
+                <option value="lunes">lunes</option>
+                <option value="martes">martes</option>
+                <option value="miercoles">miercoles</option>
+                <option value="jueves">jueves</option>
+                <option value="viernes">viernes</option>
+                <option value="sabado">sabado</option>
+                <option value="domingo">domingo</option>
+            </select>
+            </p>
+            <p>
+                Su opinion: <br/>
+                <textarea name="comentario" rows="5" cols="50">Comentario: </textarea>
+            </p>
+            <p>
+                <input type="submit" value="Comprobar">
+                <input type="reset" value="borrar todo">
+            </p>
+    </form>
+</body>
+</html>
